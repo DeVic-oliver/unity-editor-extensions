@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,5 +14,6 @@ namespace Assets.Scripts.Utils
             var choosedGameobject = _gameObjectsList.GetRandomItem();
             Instantiate(choosedGameobject, transform);
         }
+
     }
 }

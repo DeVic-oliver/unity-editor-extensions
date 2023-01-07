@@ -8,13 +8,11 @@ using UnityEngine;
 [CustomEditor(typeof(GameObjectRandomizer))]
 public class RandomGameObjectsCreator : Editor
 {
-
     public override void OnInspectorGUI()
     {
-        GameObjectRandomizer gameObjectRandomizer = (GameObjectRandomizer)target;
         base.OnInspectorGUI();
 
-        EditorGUILayout.ColorField(Color.white);
+        GameObjectRandomizer gameObjectRandomizer = (GameObjectRandomizer)target;
 
         if(GUILayout.Button("Create random Gameobject"))
         {
