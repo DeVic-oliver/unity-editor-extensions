@@ -14,6 +14,8 @@ public class RandomGameObjectsCreator : Editor
         GameObjectRandomizer gameObjectRandomizer = (GameObjectRandomizer)target;
         base.OnInspectorGUI();
 
+        EditorGUILayout.ColorField(Color.white);
+
         if(GUILayout.Button("Create random Gameobject"))
         {
             gameObjectRandomizer.CreateRandomGameObject();
